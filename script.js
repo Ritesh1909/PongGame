@@ -229,7 +229,6 @@ function startGame() {
   createCanvas();
   animate();
   canvas.addEventListener('mousemove', (e) => {
-    console.log(e.clientX);
     playerMoved = true;
     // Compensate for canvas being centered
     paddleBottomX = e.clientX - canvasPosition - paddleDiff;
